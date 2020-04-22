@@ -21,6 +21,18 @@ class App extends Component{
     console.log(error);
   })
   }
-  
+  render(){
+    return(
+      <div>
+          <h1>Hola mundo</h1>
+            <ul>{this.state.names.map(name =>
+    <li key={name}>{name}</li>
+    )}
+    </ul>
+    </div>
+    );
+  }
+  }
+  export default App;
  
   
